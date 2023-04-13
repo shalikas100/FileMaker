@@ -11,7 +11,7 @@ function generuotiVaizda(){
   }
   document.querySelector('.left-names').innerHTML = allNamesHTML;
 }
-    generuotiVaizda();
+generuotiVaizda();
 
 document.querySelector('.unique').addEventListener('click', ()=>{
 
@@ -32,5 +32,10 @@ document.querySelector('.unique').addEventListener('click', ()=>{
       console.log(uniqueHTML);
       allUniqueNamesHTML += uniqueHTML;
       }
-  document.querySelector('.right-names').innerHTML = allUniqueNamesHTML;
+document.querySelector('.right-names').innerHTML = allUniqueNamesHTML;
+})
+
+document.querySelector('.reset').addEventListener('click', ()=>{
+
+document.querySelector('.right-names').innerHTML = "";
 })
